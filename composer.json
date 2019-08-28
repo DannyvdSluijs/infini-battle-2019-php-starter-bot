@@ -1,0 +1,14 @@
+{
+    "name": "infi/php-starter-bot",
+    "description": "A PHP starter bot for the InfiniBattle 2019",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3",
+        "ext-readline": "*"
+    },
+    "autoload": {
+        "psr-4": {"Bot\\": "src/"}
+    }
+}
