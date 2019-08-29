@@ -19,8 +19,15 @@ class Planet
     /** @var int[] */
     private $neighbours;
 
-    public function __construct(int $id, float $x, float $y, float $radius, ?int $owner, float $health, array $neighbours)
-    {
+    public function __construct(
+        int $id,
+        float $x,
+        float $y,
+        float $radius,
+        ?int $owner,
+        float $health,
+        array $neighbours
+    ) {
         $this->id = $id;
         $this->x = $x;
         $this->y = $y;
@@ -70,6 +77,6 @@ class Planet
         $dx = $other->getX() - $this->x;
         $dy = $other->getY() - $this->y;
 
-        sqrt($dx * $dx - $dy * $dy);
+        return sqrt($dx * $dx - $dy * $dy);
     }
 }

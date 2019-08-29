@@ -34,6 +34,4 @@ class Move
     {
         return "send-ship {$this->power} {$this->source} {$this->target}";
     }
-
-
 }

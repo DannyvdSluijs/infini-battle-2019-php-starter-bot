@@ -63,8 +63,7 @@ class Bot
         $planetCount = self::readInt('num-planets');
         $planets = [];
 
-        for ($x = 0; $x < $planetCount; $x++)
-        {
+        for ($x = 0; $x < $planetCount; $x++) {
             $planet = self::readPlanet();
             $planets[$planet->getId()] = $planet;
         }
@@ -143,5 +142,4 @@ class Bot
             (float) $parts[5],
         );
     }
-
 }

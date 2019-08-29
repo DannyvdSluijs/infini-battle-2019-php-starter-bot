@@ -32,7 +32,4 @@ class Settings
     {
         return $this->playerId;
     }
-
-
-
 }

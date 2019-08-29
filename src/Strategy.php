@@ -18,7 +18,7 @@ class Strategy
         /** @var Planet[] $myPlanets */
         $myPlanets = array_filter(
             $gameState->getPlanets(),
-            static function(Planet $p) use ($gameState) {
+            static function (Planet $p) use ($gameState) {
                 return $p->getOwner() === $gameState->getSettings()->getPlayerId()
                     && $p->getHealth() >= random_int(2, 100);
             }
