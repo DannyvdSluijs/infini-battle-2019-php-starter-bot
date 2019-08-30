@@ -19,6 +19,6 @@ upload:
 	curl --insecure -X POST -Ffile=@./build.zip $(URI)/api/uploadBot/$(APIKEY)
 
 build:
-    composer install --no-dev
+	composer install --no-dev
 	composer dumpautoload
 	zip -r build.zip *

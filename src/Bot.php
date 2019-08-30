@@ -30,14 +30,14 @@ class Bot
 
             $line = readline();
             if ($line !== 'turn-start') {
-                throw new \Exception("Expected 'turn-start', got '{line}");
+                throw new \Exception("Expected 'turn-start', got '{$line}");
             }
 
             foreach ($strategy($gameState) as $move) {
                 fwrite(STDOUT, (string) $move . PHP_EOL);
             }
 
-            fwrite(STDOUT, 'end-turn');
+            fwrite(STDOUT, 'end-turn' . PHP_EOL);
         }
     }
 

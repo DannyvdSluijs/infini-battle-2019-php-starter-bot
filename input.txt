@@ -7,10 +7,24 @@ planet 0 1 1 3 1 50
 neighbors 1
 planet 1 5 5 50 neutral 52
 neighbors 0 2
-planet 2 10 10 3 0 50
+planet 2 9 9 3 0 50
 neighbors 1
 num-ships 2
 ship 2 2 1 1 500
-ship 9 9 1 0 200
+ship 8 8 1 0 200
+turn-start
+turn-init
+num-planets 3
+planet 0 1 1 3 1 25
+neighbors 1
+planet 1 5 5 50 neutral 52
+neighbors 0 2
+planet 2 10 10 3 0 25
+neighbors 1
+num-ships 4
+ship 3 3 1 1 500
+ship 2 2 1 1 25
+ship 7 7 1 0 200
+ship 8 8 1 0 25
 turn-start
 game-end
